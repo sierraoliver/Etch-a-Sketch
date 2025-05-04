@@ -16,7 +16,7 @@ function colorEvents(squares){
 const gridButton = document.getElementById("grid");
 gridButton.addEventListener ("click", function(){
     let gridSize = prompt ("Enter a grid size < 100: ");
-    while(gridSize === null || gridSize<=0 || gridSize>=100){
+    while(isNaN(gridSize) || gridSize === null || gridSize<=0 || gridSize>=100){
         gridSize = prompt ("Enter a grid size < 100: ");
     }
     gridCreation(gridSize);
