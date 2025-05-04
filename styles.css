@@ -2,29 +2,41 @@
     width: 800px;
     height: 800px;
     margin-inline: auto;
-    margin-top: 20px;
 }
 
 .container{
     display: flex;
     flex: 1 1 auto;
-    align-items: center;
+    align-items: baseline;
+    justify-content: center;
 }
 .square{
     height: 50px;
     width: 50px;
     flex: 1 1 auto;
-    border: 2px solid black;
+    border: 2px solid #780000;
 }
 
 .button-con{
+    flex-direction: column;
     display: flex;
-    justify-content: center;
+    gap: 40px;
 }
 
 button{
     padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 5px;
-    background-color: black;
+    background-color: #669BBC;
     color: white;
+    border: 2px solid #003049;
+}
+
+#title{
+    font-family: "Roboto";
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: underline;
 }
